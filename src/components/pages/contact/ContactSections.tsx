@@ -16,7 +16,7 @@ import { GOOGLE_MAPS_DIRECTIONS_URL, GOOGLE_MAPS_EMBED_URL } from "@/constant/si
 import ContactDetailCard from "./ContactDetailCard";
 
 export const ContactDetailsSection = () => (
-  <section className="bg-dark-secondary py-20 md:py-28 lg:py-36">
+  <section className="bg-dark-secondary py-[60px]">
     <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
       <div className="grid gap-6 md:grid-cols-3">
         {CONTACT_DETAILS.map((detail, i) => (
@@ -28,7 +28,7 @@ export const ContactDetailsSection = () => (
 );
 
 export const ContactBannerSection = () => (
-  <section className="border-y border-border-subtle bg-dark-primary py-20 md:py-24">
+  <section className="border-y border-border-subtle bg-dark-primary py-[60px]">
     <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
       <CenteredCtaCard
         eyebrow={CONTACT_BANNER.eyebrow}
@@ -61,7 +61,7 @@ export const ContactBannerSection = () => (
 );
 
 export const ContactLocationSection = () => (
-  <section className="bg-dark-secondary py-20 md:py-28 lg:py-36">
+  <section className="bg-dark-secondary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div>
@@ -111,7 +111,7 @@ export const ContactLocationSection = () => (
 );
 
 export const ContactCtaSection = () => (
-  <section className="bg-dark-primary py-28 md:py-36 lg:py-44">
+  <section className="bg-dark-primary py-[60px]">
     <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
       <CenteredCtaCard
         eyebrow={CONTACT_CTA.eyebrow}

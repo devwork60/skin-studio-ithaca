@@ -11,7 +11,7 @@ const IDS = POLICIES.map((p) => p.id);
 const PolicyBody = () => {
   const active = useScrollSpy(IDS);
   return (
-    <section className="bg-dark-primary py-24 md:py-32">
+    <section className="bg-dark-primary py-[60px]">
       <div className="mx-auto grid max-w-[1100px] gap-12 px-6 lg:grid-cols-[260px_1fr] lg:gap-20 lg:px-12">
         <PolicySidebar active={active} />
         <div>

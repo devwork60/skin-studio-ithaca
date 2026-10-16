@@ -13,7 +13,7 @@ import type { ServicePageData } from "@/constant/servicePages/types";
 
 // Two-column service overview: photo on the left, copy, highlights, tags and CTAs on the right.
 const ServiceDetailSection = ({ detail }: { detail: ServicePageData["detail"] }) => (
-  <section className="bg-dark-secondary py-28 md:py-36 lg:py-44">
+  <section className="bg-dark-secondary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
         <FadeUp

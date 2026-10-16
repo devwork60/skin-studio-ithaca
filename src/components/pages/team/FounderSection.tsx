@@ -14,7 +14,7 @@ import { TEAM_FOUNDER } from "@/constant/teamPageData";
 
 // Founder feature: portrait with a "Founder" tag, bio, motto, credentials and booking buttons.
 const FounderSection = () => (
-  <section className="bg-dark-secondary py-28 md:py-36 lg:py-44">
+  <section className="bg-dark-secondary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <FadeUp

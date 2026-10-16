@@ -32,7 +32,7 @@ const BookingCtaSection: React.FC<BookingCtaSectionProps> = ({
   primaryCta = BOOKING_CTA_PRIMARY,
   narrow = false,
 }) => (
-  <section className="relative overflow-hidden bg-dark-primary py-28 md:py-36 lg:py-44">
+  <section className="relative overflow-hidden bg-dark-primary py-[60px]">
     <div className={clsx("mx-auto px-6 lg:px-12", narrow ? "max-w-[1200px]" : "max-w-[1400px]")}>
       <div className="grid overflow-hidden rounded-xl lg:grid-cols-2">
         <div

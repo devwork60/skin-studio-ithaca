@@ -5,7 +5,7 @@ import { OFFERS, OFFERS_INTRO, OFFERS_NOTE } from "@/constant/offersPageData";
 import OfferCard from "./OfferCard";
 
 const OffersSection = () => (
-  <section className="bg-dark-secondary py-28 md:py-36 lg:py-44">
+  <section className="bg-dark-secondary py-[60px]">
     <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
       <SectionHeader
         align="center"

@@ -19,7 +19,7 @@ const columnClasses = [
 ];
 
 const ContactSection = () => (
-  <section id="contact" className="bg-dark-secondary py-28 md:py-36 lg:py-44">
+  <section id="contact" className="bg-dark-secondary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <div className="grid items-center gap-16 lg:grid-cols-[1fr_auto]">
         <SectionHeader eyebrow={CONTACT_EYEBROW} title={CONTACT_HEADING} headingSpacing="" />

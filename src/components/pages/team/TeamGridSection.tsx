@@ -3,7 +3,7 @@ import { TEAM_GRID, TEAM_PAGE_MEMBERS } from "@/constant/teamPageData";
 import TeamMemberCard from "./TeamMemberCard";
 
 const TeamGridSection = () => (
-  <section className="bg-dark-primary py-28 md:py-36 lg:py-44">
+  <section className="bg-dark-primary py-[60px]">
     <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
       <SectionHeader
         align="center"

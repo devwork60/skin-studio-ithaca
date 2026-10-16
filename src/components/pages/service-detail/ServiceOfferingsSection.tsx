@@ -10,7 +10,7 @@ type Offerings = NonNullable<ServicePageData["offerings"]>;
 
 // Grid of sub-services (e.g. the four lash & brow options) with a booking link on each.
 const ServiceOfferingsSection = ({ offerings }: { offerings: Offerings }) => (
-  <section className="border-t border-border-subtle bg-dark-primary py-24 md:py-32">
+  <section className="border-t border-border-subtle bg-dark-primary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <SectionHeader
         align="center"

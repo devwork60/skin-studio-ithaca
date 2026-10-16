@@ -8,7 +8,7 @@ import {
 import ComparisonSlider from "./ComparisonSlider";
 
 const BeforeAfterSection = () => (
-  <section className="bg-dark-primary pb-28 pt-6 md:pb-36 md:pt-8 lg:pb-44 lg:pt-10">
+  <section className="bg-dark-primary pb-[60px] pt-6 md:pt-8 lg:pt-10">
     <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
       <SectionHeader
         align="center"

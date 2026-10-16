@@ -16,7 +16,7 @@ const StatementSection: React.FC<StatementSectionProps> = ({
   paragraphs,
   actions,
 }) => (
-  <section className="bg-dark-primary py-28 md:py-36 lg:py-44">
+  <section className="bg-dark-primary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
         <SectionHeader eyebrow={eyebrow} title={heading} headingSpacing="" />

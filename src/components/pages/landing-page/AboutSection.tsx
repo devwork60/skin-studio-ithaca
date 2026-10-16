@@ -16,7 +16,7 @@ import AboutImages from "./AboutImages";
 import StatsRow from "@/components/common-components/StatsRow";
 
 const AboutSection = () => (
-  <section id="about" className="bg-dark-secondary py-28 md:py-36 lg:py-44">
+  <section id="about" className="bg-dark-secondary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
         <div>

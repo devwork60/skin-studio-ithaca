@@ -10,7 +10,7 @@ import { ABOUT_NATALIE, ABOUT_PAGE_STATS } from "@/constant/aboutPageData";
 
 // "Meet Natalie": portrait on the left, bio and buttons on the right, stats below.
 const AboutIntroSection = () => (
-  <section className="bg-dark-secondary py-28 md:py-36 lg:py-44">
+  <section className="bg-dark-secondary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
         <FadeUp inView y={0} scale={0.95} duration={0.9} margin="-100px" className="relative">

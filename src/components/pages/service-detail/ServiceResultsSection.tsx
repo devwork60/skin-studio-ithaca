@@ -5,7 +5,7 @@ import type { ServiceResultItem } from "@/constant/servicePages/types";
 import ResultCard from "./ResultCard";
 
 const ServiceResultsSection = ({ items }: { items: ServiceResultItem[] }) => (
-  <section className="bg-dark-primary py-28 md:py-36 lg:py-44">
+  <section className="bg-dark-primary py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <SectionHeader
         align="center"

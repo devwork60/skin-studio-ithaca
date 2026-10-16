@@ -36,7 +36,7 @@ const ContactRow = ({ icon: Icon, label, number, href }: ContactRowProps) => (
 );
 
 const PolicyQuestions = () => (
-  <section className="bg-dark-primary pb-28 md:pb-36">
+  <section className="bg-dark-primary pb-[60px]">
     <div className="mx-auto max-w-[1100px] px-6 lg:px-12">
       <FadeUp
         inView

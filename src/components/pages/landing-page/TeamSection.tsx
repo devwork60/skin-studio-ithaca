@@ -19,7 +19,7 @@ const TeamSection = () => {
   const { trackRef, progress, atStart, atEnd, update, scrollByCard } = useCarouselScroll();
 
   return (
-    <section id="team" className="overflow-hidden bg-dark-secondary py-28 md:py-36 lg:py-44">
+    <section id="team" className="overflow-hidden bg-dark-secondary py-[60px]">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
         <div className="mb-12 flex flex-col gap-8 md:mb-16 md:flex-row md:items-end md:justify-between">
           <SectionHeader eyebrow={TEAM_EYEBROW} title={TEAM_HEADING} headingSpacing="" />

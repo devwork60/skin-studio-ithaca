@@ -17,7 +17,7 @@ interface TestimonialsSectionProps {
 }
 
 const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ showCTAs = true }) => (
-  <section id="testimonials" className="bg-dark-deep py-28 md:py-36 lg:py-44">
+  <section id="testimonials" className="bg-dark-deep py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
       <div className="mb-16 text-center md:mb-20">
         <SectionHeader

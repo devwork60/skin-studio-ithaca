@@ -20,7 +20,7 @@ const ServiceMenuSection = () => {
   );
 
   return (
-    <section className="bg-dark-secondary py-20 md:py-28 lg:py-36">
+    <section className="bg-dark-secondary py-[60px]">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
         <div className="mb-8 md:mb-10">
           <CategoryFilter active={category} onChange={setCategory} />

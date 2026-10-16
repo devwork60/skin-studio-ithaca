@@ -7,7 +7,7 @@ import StatHeading from "@/components/pages/typography/StatHeading";
 import { COMING_SOON } from "@/constant/servicesPageData";
 
 const ComingSoonSection = () => (
-  <section className="bg-dark-deep py-20 md:py-28">
+  <section className="bg-dark-deep py-[60px]">
     <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
       <FadeUp
         inView

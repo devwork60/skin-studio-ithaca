@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import clsx from "clsx";
 import type { NavItem } from "@/constant/navData";
 import { EASE } from "@/constant/motion";
+import { isActivePath } from "@/utils/isActivePath";
 
 interface MobileNavItemProps {
   item: NavItem;
@@ -21,7 +23,10 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
   expanded,
   onToggle,
   onNavigate,
-}) => (
+}) => {
+  const pathname = usePathname();
+  const active = isActivePath(pathname, item.href);
+  return (
   <div>
     <div className="flex items-center border-b border-border-subtle">
       <motion.div
@@ -33,7 +38,11 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
         <Link
           href={item.href}
           onClick={onNavigate}
-          className="block py-5 font-serif text-[30px] leading-[120%] text-ivory transition-colors duration-300 hover:text-rose"
+          aria-current={active ? "page" : undefined}
+          className={clsx(
+            "block py-5 font-serif text-[30px] leading-[120%] transition-colors duration-300 hover:text-rose",
+            active ? "text-rose" : "text-ivory"
+          )}
         >
           {item.label}
         </Link>
@@ -78,6 +87,7 @@ const MobileNavItem: React.FC<MobileNavItemProps> = ({
       )}
     </AnimatePresence>
   </div>
-);
+  );
+};
 
 export default MobileNavItem;

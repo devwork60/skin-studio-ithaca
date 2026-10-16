@@ -16,7 +16,7 @@ import StickyServiceCard from "./StickyServiceCard";
 const ServicesSection = () => (
   <section
     id="services"
-    className="bg-dark-primary pb-10 pt-28 md:pb-12 md:pt-36 lg:pb-14 lg:pt-44"
+    className="bg-dark-primary pb-10 pt-[60px] md:pb-12 lg:pb-14"
   >
     <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
       <SectionHeader

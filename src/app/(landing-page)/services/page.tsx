@@ -9,7 +9,7 @@ export default function ServicesPage() {
     <main>
       <PageHero {...SERVICES_PAGE_HERO} />
 
-      <section className="bg-dark-primary py-20 md:py-28 lg:py-36">
+      <section className="bg-dark-primary py-[60px]">
         <div className="mx-auto max-w-[1200px] px-6 lg:px-12">
           <div className="space-y-12 md:space-y-16 lg:space-y-20">
             {SERVICES_PAGE_LIST.map((service, i) => (
