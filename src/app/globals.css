@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+/* Raw palette — the single place base colors are defined */
+:root {
+  --ivory: #F4EFE8;
+  --body-muted: #D6D0C8;
+  --dark-primary: #1F201D;
+  --dark-secondary: #292A26;
+  --dark-deep: #181916;
+  --rose: #C25A83;
+  --rose-hover: #A9466D;
+  --mauve: #8D6F86;
+  --blush: #D9B4C2;
+  --lavender: #A89BB5;
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-divider: rgba(255, 255, 255, 0.06);
+  --surface-subtle: rgba(255, 255, 255, 0.04);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.15);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.25);
+  --selection: rgba(194, 90, 131, 0.3);
+}
+
+@theme inline {
+  /* Base palette */
+  --color-dark-primary: var(--dark-primary);
+  --color-dark-secondary: var(--dark-secondary);
+  --color-dark-deep: var(--dark-deep);
+  --color-ivory: var(--ivory);
+  --color-body-muted: var(--body-muted);
+  --color-rose: var(--rose);
+  --color-rose-hover: var(--rose-hover);
+  --color-mauve: var(--mauve);
+  --color-blush: var(--blush);
+  --color-lavender: var(--lavender);
+  --color-border-subtle: var(--border-subtle);
+  --color-surface-subtle: var(--surface-subtle);
+  --color-divider: var(--border-divider);
+
+  /* Semantic colors (design system: bg / text / border / action / icon) */
+  --color-bg-overlay: color-mix(in srgb, var(--dark-primary) 60%, transparent);
+  --color-bg-glass: color-mix(in srgb, var(--dark-primary) 95%, transparent);
+  --color-bg-accent-soft: color-mix(in srgb, var(--rose) 10%, transparent);
+  --color-bg-accent-faint: color-mix(in srgb, var(--rose) 3%, transparent);
+  --color-bg-error-soft: color-mix(in srgb, var(--color-red-500) 10%, transparent);
+  --color-bg-success-soft: color-mix(in srgb, var(--color-emerald-500) 5%, transparent);
+
+  --color-text-subtle: color-mix(in srgb, var(--body-muted) 60%, transparent);
+  --color-text-placeholder: color-mix(in srgb, var(--body-muted) 50%, transparent);
+  --color-text-faint: color-mix(in srgb, var(--ivory) 40%, transparent);
+  --color-text-accent-soft: color-mix(in srgb, var(--rose) 60%, transparent);
+  --color-text-error: var(--color-red-400);
+  --color-text-error-strong: var(--color-red-300);
+  --color-text-success: var(--color-emerald-400);
+
+  --color-border-hover: color-mix(in srgb, var(--rose) 30%, transparent);
+  --color-border-focus: color-mix(in srgb, var(--rose) 40%, transparent);
+  --color-border-accent: color-mix(in srgb, var(--rose) 20%, transparent);
+  --color-border-error: color-mix(in srgb, var(--color-red-500) 50%, transparent);
+  --color-border-error-soft: color-mix(in srgb, var(--color-red-500) 30%, transparent);
+  --color-border-success: color-mix(in srgb, var(--color-emerald-500) 20%, transparent);
+
+  --color-action-badge: color-mix(in srgb, var(--rose) 80%, transparent);
+  --color-icon-star: var(--color-amber-400);
+
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Manrope', 'Avenir Next', system-ui, -apple-system, sans-serif;
+
+  /* Radius (design system: md 8 · lg 12 · xl 16 · card 28 · full) */
+  --radius-card: 28px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dark-primary);
+  color: var(--ivory);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--selection);
+  color: var(--ivory);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.heading-serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--ivory);
+}
+
+.heading-serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Element defaults live in the base layer so Tailwind utility classes can override them */
+@layer base {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
