@@ -13,6 +13,7 @@ export interface MenuService {
   priceCents: number;
   durationMinutes: number;
   categorySlug: string;
+  squareId: string; // Square Appointments service id
 }
 
 export const MENU_CATEGORIES: MenuCategory[] = [
@@ -32,6 +33,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 12500,
     durationMinutes: 60,
     categorySlug: "facials",
+    squareId: "2OEMVOESATGLX2YCAYLSFZ35",
   },
   {
     id: 2,
@@ -40,6 +42,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 16500,
     durationMinutes: 60,
     categorySlug: "facials",
+    squareId: "3FCCH367QOQ6SUA45NJB76BB",
   },
   {
     id: 3,
@@ -48,6 +51,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 35000,
     durationMinutes: 70,
     categorySlug: "facials",
+    squareId: "G2ANYYRL6Q55CSOBKLIIKGCQ",
   },
   {
     id: 4,
@@ -56,6 +60,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 20000,
     durationMinutes: 60,
     categorySlug: "facials",
+    squareId: "FNUG3M7RV76KDW7IEK2XBNNW",
   },
   {
     id: 5,
@@ -64,6 +69,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 12500,
     durationMinutes: 60,
     categorySlug: "facials",
+    squareId: "DC6FI4S55T52BHYON3DJON7O",
   },
   {
     id: 6,
@@ -72,6 +78,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 13000,
     durationMinutes: 60,
     categorySlug: "facials",
+    squareId: "X6C7YMIAMXHZBOVEEZ5UOPBG",
   },
   {
     id: 7,
@@ -80,6 +87,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 20000,
     durationMinutes: 60,
     categorySlug: "facials",
+    squareId: "TLD4HORUHWYJ4RL7LCOMTVHC",
   },
   {
     id: 8,
@@ -88,6 +96,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 55,
     categorySlug: "facials",
+    squareId: "WG27XQA5U57QRMCGZNDAACIF",
   },
   {
     id: 9,
@@ -96,6 +105,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7500,
     durationMinutes: 30,
     categorySlug: "facials",
+    squareId: "RU3F2TG654XUK55UQ4YDGMTT",
   },
   {
     id: 10,
@@ -104,6 +114,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 20000,
     durationMinutes: 50,
     categorySlug: "facials",
+    squareId: "HXBH2X4KD75GJ4QNPON6ZU3V",
   },
   {
     id: 11,
@@ -112,6 +123,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 60,
     categorySlug: "facials",
+    squareId: "VGBBPFWZF2JMJ26JAL2ECXP2",
   },
   {
     id: 12,
@@ -120,6 +132,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 2500,
     durationMinutes: 20,
     categorySlug: "laser",
+    squareId: "VPP7DXS5FLVPHOGI7H2O5BVQ",
   },
   {
     id: 13,
@@ -128,6 +141,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7900,
     durationMinutes: 10,
     categorySlug: "laser",
+    squareId: "QUXM5TKJIR6M4AL6AM2CQNZ3",
   },
   {
     id: 14,
@@ -136,6 +150,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 9900,
     durationMinutes: 10,
     categorySlug: "laser",
+    squareId: "QHYVVLTOXDGMCG6BNT6E6JTK",
   },
   {
     id: 15,
@@ -144,6 +159,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 12000,
     durationMinutes: 20,
     categorySlug: "laser",
+    squareId: "LUG5RFAFF7YY4X7KIOTUGSKO",
   },
   {
     id: 16,
@@ -152,6 +168,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 12500,
     durationMinutes: 15,
     categorySlug: "laser",
+    squareId: "QEWHJDSNADCMYNQSH2WKGEYH",
   },
   {
     id: 17,
@@ -160,6 +177,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 20000,
     durationMinutes: 15,
     categorySlug: "laser",
+    squareId: "TNFS5HYXOLGRBCSVZSIOLVK5",
   },
   {
     id: 18,
@@ -168,6 +186,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 9900,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "3HTYGDWFQUKLRPYF7ZMNU622",
   },
   {
     id: 19,
@@ -176,6 +195,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7900,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "5QEXZQCQ2TJVGFOMGG2X7N3N",
   },
   {
     id: 20,
@@ -184,6 +204,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7900,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "YLUE5ZOL2ETE5AEEGISU4M3U",
   },
   {
     id: 21,
@@ -192,6 +213,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 9900,
     durationMinutes: 20,
     categorySlug: "laser",
+    squareId: "LLIB25JHXDZFSMUM2LPH3Z2Z",
   },
   {
     id: 22,
@@ -200,6 +222,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "O63B7BFRX3PI5IUIZXDHYBI7",
   },
   {
     id: 23,
@@ -208,6 +231,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 9900,
     durationMinutes: 20,
     categorySlug: "laser",
+    squareId: "NOROK7YQN7YDCTSKS5XNWAAV",
   },
   {
     id: 24,
@@ -216,6 +240,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 12500,
     durationMinutes: 40,
     categorySlug: "laser",
+    squareId: "4WPVE2BDMSTHD3MNY5WKJMYG",
   },
   {
     id: 25,
@@ -224,6 +249,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 60,
     categorySlug: "laser",
+    squareId: "5X6ZVS2PQYPPM4X2ZLM7GX4W",
   },
   {
     id: 26,
@@ -232,6 +258,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7500,
     durationMinutes: 20,
     categorySlug: "laser",
+    squareId: "5UUQJ6HL75Q4HKHDIIGCMMPP",
   },
   {
     id: 27,
@@ -240,6 +267,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 20,
     categorySlug: "laser",
+    squareId: "4S3SVRJK7Z3HRRAYZUAOLBOB",
   },
   {
     id: 28,
@@ -248,6 +276,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 45,
     categorySlug: "laser",
+    squareId: "B3JVHKNKTFOQWB6DJURZVWAF",
   },
   {
     id: 29,
@@ -256,6 +285,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 40,
     categorySlug: "laser",
+    squareId: "657WYIVKLELMZXVHOH4PTZR5",
   },
   {
     id: 30,
@@ -264,6 +294,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 25000,
     durationMinutes: 90,
     categorySlug: "laser",
+    squareId: "PYSVPC2HTHJYHYCRVWIXH4KX",
   },
   {
     id: 31,
@@ -272,6 +303,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 17500,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "JPJM7ITPLDEGDRQS7IR7FEJC",
   },
   {
     id: 32,
@@ -280,6 +312,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 25000,
     durationMinutes: 90,
     categorySlug: "laser",
+    squareId: "LXGAPW4ZWFV6AELZPTADLTC3",
   },
   {
     id: 33,
@@ -288,6 +321,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 9900,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "N3537P7Q3DZZX55S4K7SHHLB",
   },
   {
     id: 34,
@@ -296,6 +330,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 12000,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "RWSEOXN4NXATNNBWI3TVX66F",
   },
   {
     id: 35,
@@ -304,6 +339,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "Y6HJHEMTKQ62EZOC233A5EG3",
   },
   {
     id: 36,
@@ -312,6 +348,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 20000,
     durationMinutes: 45,
     categorySlug: "laser",
+    squareId: "SCTLPXT2ITXQFQXWIMISNLMW",
   },
   {
     id: 37,
@@ -320,6 +357,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7900,
     durationMinutes: 10,
     categorySlug: "laser",
+    squareId: "J7A6GSS4KA2DCBFQPAYEJYAH",
   },
   {
     id: 38,
@@ -328,6 +366,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 30,
     categorySlug: "laser",
+    squareId: "GJNICY65OXWRMRON4IPPPDBM",
   },
   {
     id: 39,
@@ -336,6 +375,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 15000,
     durationMinutes: 50,
     categorySlug: "laser",
+    squareId: "E64PRKPXHEZJNZR5LHBIMNMV",
   },
   {
     id: 40,
@@ -344,6 +384,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 30000,
     durationMinutes: 70,
     categorySlug: "laser",
+    squareId: "NZT4NN5GRZ22WNYGSFGIMIG2",
   },
   {
     id: 41,
@@ -352,6 +393,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 3500,
     durationMinutes: 20,
     categorySlug: "lash-brow",
+    squareId: "PRHZENQTUCJUCICVIUL257FL",
   },
   {
     id: 42,
@@ -360,6 +402,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 5000,
     durationMinutes: 30,
     categorySlug: "lash-brow",
+    squareId: "S3OR3ESJDS65JHVUYKRAZ6ZQ",
   },
   {
     id: 43,
@@ -368,6 +411,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7500,
     durationMinutes: 45,
     categorySlug: "lash-brow",
+    squareId: "2GP53D3CICYXI4M5GYW3Q5GK",
   },
   {
     id: 44,
@@ -376,6 +420,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 10000,
     durationMinutes: 60,
     categorySlug: "lash-brow",
+    squareId: "V22QACTUQBRD646YO4AAU6WB",
   },
   {
     id: 45,
@@ -384,6 +429,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 4000,
     durationMinutes: 15,
     categorySlug: "lash-brow",
+    squareId: "AQFXQRFY52C6VYW3JU42HZEQ",
   },
   {
     id: 46,
@@ -392,6 +438,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 12500,
     durationMinutes: 30,
     categorySlug: "lash-brow",
+    squareId: "EW6RLVWUIN53R5UZST7DIUXW",
   },
   {
     id: 47,
@@ -400,6 +447,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7000,
     durationMinutes: 30,
     categorySlug: "lash-brow",
+    squareId: "6NWDARSQXV2WNQKCXZ2YEDYX",
   },
   {
     id: 48,
@@ -408,6 +456,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 3000,
     durationMinutes: 15,
     categorySlug: "waxing",
+    squareId: "IHAFGFTQDUAEW7KCN6L5HQG7",
   },
   {
     id: 49,
@@ -416,6 +465,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 1500,
     durationMinutes: 5,
     categorySlug: "waxing",
+    squareId: "7GD7LSM5ELTCOZDK5B2Q4CNW",
   },
   {
     id: 50,
@@ -424,6 +474,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 4000,
     durationMinutes: 20,
     categorySlug: "waxing",
+    squareId: "V4E3AGONFNE4VTLBSTFGCJ6Y",
   },
   {
     id: 51,
@@ -432,6 +483,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 4500,
     durationMinutes: 30,
     categorySlug: "waxing",
+    squareId: "2JI5QQI5YG6JCMYJO2PLN5HC",
   },
   {
     id: 52,
@@ -440,6 +492,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 2000,
     durationMinutes: 10,
     categorySlug: "waxing",
+    squareId: "7IHIBLEX5QCKUZVNA3JTQF7N",
   },
   {
     id: 53,
@@ -448,6 +501,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 1500,
     durationMinutes: 5,
     categorySlug: "waxing",
+    squareId: "TBHBQ7LZXHGFP4BOD4X3L35S",
   },
   {
     id: 54,
@@ -456,6 +510,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 4000,
     durationMinutes: 30,
     categorySlug: "dermaplaning",
+    squareId: "5YIJY5NRPCZRQJSDNMN3OXRP",
   },
   {
     id: 55,
@@ -464,6 +519,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7000,
     durationMinutes: 40,
     categorySlug: "dermaplaning",
+    squareId: "YTONDJAINDOHRWXFT2Y6DIDE",
   },
   {
     id: 56,
@@ -472,6 +528,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7000,
     durationMinutes: 40,
     categorySlug: "dermaplaning",
+    squareId: "6B6QJOBUWTJDV7G5Q5YBA5PD",
   },
   {
     id: 57,
@@ -480,6 +537,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7000,
     durationMinutes: 40,
     categorySlug: "dermaplaning",
+    squareId: "GQTII3UPLHNMSRAFQETSRP6Q",
   },
   {
     id: 58,
@@ -488,6 +546,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 7000,
     durationMinutes: 30,
     categorySlug: "dermaplaning",
+    squareId: "XKPVRGJ3NF6WTFZ6EEWZ3TLA",
   },
   {
     id: 59,
@@ -496,6 +555,7 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 5000,
     durationMinutes: 30,
     categorySlug: "dermaplaning",
+    squareId: "NLYVY5LZNMSTAYSJNHHQBPIM",
   },
   {
     id: 60,
@@ -504,5 +564,6 @@ export const MENU_SERVICES: MenuService[] = [
     priceCents: 2500,
     durationMinutes: 30,
     categorySlug: "consult",
+    squareId: "EIYI3F272TJCWA4SABLZQZZ4",
   },
 ];

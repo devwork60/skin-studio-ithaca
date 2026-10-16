@@ -1,4 +1,5 @@
 import type { ServicePageData } from "./types";
+import { SQUARE_URL } from "@/constant/squareServices";
 
 export const MICRO_INFUSION_FACIAL: ServicePageData = {
   slug: "micro-infusion-facial",
@@ -44,7 +45,7 @@ export const MICRO_INFUSION_FACIAL: ServicePageData = {
       "Customized treatment plans tailored to individual concerns",
     ],
     tags: ["Collagen Boost", "Fine Lines", "Pore Refining", "Skin Resurfacing", "Anti-Aging"],
-    primaryCta: { text: "Book This Treatment", url: "/book" },
+    primaryCta: { text: "Book This Treatment", url: SQUARE_URL.microFusion },
   },
   results: [
     {

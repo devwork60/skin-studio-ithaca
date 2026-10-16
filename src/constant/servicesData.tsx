@@ -1,3 +1,5 @@
+import { SQUARE_URL } from "@/constant/squareServices";
+
 export const SERVICES_EYEBROW = "Our Treatments";
 
 export const SERVICES_HEADING = (
@@ -11,7 +13,7 @@ export const SERVICES_HEADING = (
 export const SERVICES_DESCRIPTION =
   "From custom facials to advanced laser treatments, every service is tailored to your unique skin goals.";
 
-export const SERVICES_CARD_CTA = { text: "Book This Treatment", url: "/book" };
+export const SERVICES_CARD_CTA = { text: "Book This Treatment" };
 export const SERVICES_PRIMARY_CTA = { text: "Explore All Treatments", url: "/services" };
 export const SERVICES_SECONDARY_CTA = {
   text: "Not sure? Book a free consultation",
@@ -26,6 +28,7 @@ export interface Service {
   tags: string[];
   image: string;
   alt: string;
+  bookUrl: string; // Square deep link for this service
 }
 
 export const SERVICES: Service[] = [
@@ -38,6 +41,7 @@ export const SERVICES: Service[] = [
     tags: ["Deep Cleanse", "Hydration", "Acne Care"],
     image: "/assets/services/facial-mask.webp",
     alt: "Professional facial treatment with gentle skincare application",
+    bookUrl: SQUARE_URL.facial,
   },
   {
     number: "02",
@@ -48,6 +52,7 @@ export const SERVICES: Service[] = [
     tags: ["Collagen Boost", "Fine Lines", "Pore Refining"],
     image: "/assets/services/microfusion.webp",
     alt: "Gloved esthetician using a micro-infusion pen on a client's face",
+    bookUrl: SQUARE_URL.microFusion,
   },
   {
     number: "03",
@@ -58,6 +63,7 @@ export const SERVICES: Service[] = [
     tags: ["Brown Spots", "Rosacea", "Sun Damage"],
     image: "/assets/services/photofacial.webp",
     alt: "Professional BBL Photofacial treatment in progress",
+    bookUrl: SQUARE_URL.photoFacial,
   },
   {
     number: "04",
@@ -68,6 +74,7 @@ export const SERVICES: Service[] = [
     tags: ["Pain-Free", "All Skin Types", "Fewer Sessions"],
     image: "/assets/services/laser-v2.webp",
     alt: "Professional laser hair removal treatment session",
+    bookUrl: SQUARE_URL.laserConsult,
   },
   {
     number: "05",
@@ -78,5 +85,6 @@ export const SERVICES: Service[] = [
     tags: ["Lash Lift", "Lash Tint", "Party Lashes", "Brow Tints"],
     image: "/assets/services/lash.webp",
     alt: "Close-up of naturally curled eyelashes and lash services",
+    bookUrl: SQUARE_URL.lashLift,
   },
 ];

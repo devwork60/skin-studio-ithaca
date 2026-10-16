@@ -1,4 +1,5 @@
 import type { ServicePageData } from "./types";
+import { SQUARE_URL } from "@/constant/squareServices";
 
 export const PHOTO_FACIAL: ServicePageData = {
   slug: "photo-facial",
@@ -44,7 +45,7 @@ export const PHOTO_FACIAL: ServicePageData = {
       "Acts on deeper layers of the skin for lasting results",
     ],
     tags: ["Brown Spots", "Rosacea", "Sun Damage", "Skin Rejuvenation", "Broken Capillaries"],
-    primaryCta: { text: "Book This Treatment", url: "/book" },
+    primaryCta: { text: "Book This Treatment", url: SQUARE_URL.photoFacial },
   },
   results: [
     {

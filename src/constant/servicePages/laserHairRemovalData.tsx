@@ -1,4 +1,5 @@
 import type { ServicePageData } from "./types";
+import { SQUARE_URL } from "@/constant/squareServices";
 
 export const LASER_HAIR_REMOVAL: ServicePageData = {
   slug: "laser-hair-removal",
@@ -44,7 +45,7 @@ export const LASER_HAIR_REMOVAL: ServicePageData = {
       "Highly effective for pigmented lesions",
     ],
     tags: ["Pain-Free", "All Skin Types", "Fewer Sessions", "Versa Pro Diode", "No Downtime"],
-    primaryCta: { text: "Book This Treatment", url: "/book" },
+    primaryCta: { text: "Book This Treatment", url: SQUARE_URL.laserConsult },
   },
   results: [
     {

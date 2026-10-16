@@ -28,7 +28,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, imageFirst = false }
             <Label key={tag}>{tag}</Label>
           ))}
         </div>
-        <ButtonCapsLink text={SERVICES_CARD_CTA.text} url={SERVICES_CARD_CTA.url} />
+        <ButtonCapsLink text={SERVICES_CARD_CTA.text} url={service.bookUrl} />
       </div>
     </div>
   );
