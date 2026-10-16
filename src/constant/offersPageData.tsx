@@ -1,5 +1,5 @@
 import { Sparkles, Zap, type LucideIcon } from "lucide-react";
-import { SQUARE_BOOKING_URL, SQUARE_FACIAL_BOOKING_URL } from "@/constant/site";
+import { SQUARE_URL } from "@/constant/squareServices";
 
 export const OFFERS_PAGE_SEO = {
   title: "Special Offers | Skin Studio Ithaca",
@@ -57,7 +57,7 @@ export const OFFERS: Offer[] = [
     tags: ["Skin Analysis", "Personalized Plan", "All Skin Types"],
     image: "/assets/why-choose/treatment-facial.webp",
     alt: "Professional facial consultation and treatment at Skin Studio Ithaca",
-    bookingUrl: SQUARE_FACIAL_BOOKING_URL,
+    bookingUrl: SQUARE_URL.facialConsult,
   },
   {
     title: "Laser Hair Consultation",
@@ -69,7 +69,7 @@ export const OFFERS: Offer[] = [
     tags: ["All Skin Types", "Transparent Pricing", "Versa Pro Diode"],
     image: "/assets/services/laser-treatment.webp",
     alt: "Professional Versa Pro Diode laser hair removal consultation at Skin Studio Ithaca",
-    bookingUrl: SQUARE_BOOKING_URL,
+    bookingUrl: SQUARE_URL.laserConsult,
   },
 ];
 

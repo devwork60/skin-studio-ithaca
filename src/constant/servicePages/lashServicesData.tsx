@@ -1,6 +1,9 @@
+import { SQUARE_URL } from "@/constant/squareServices";
 import type { ServicePageData } from "./types";
 
-const BOOK = { text: "Book This Service", url: "/book" };
+const BOOK_TEXT = "Book This Service";
+// Party Lashes has no Square service yet, so it opens the general booking page.
+const bookService = (url: string) => ({ text: BOOK_TEXT, url });
 
 export const LASH_SERVICES: ServicePageData = {
   slug: "lash-services",
@@ -47,7 +50,7 @@ export const LASH_SERVICES: ServicePageData = {
       "Technicians who are true artists — their work speaks for itself",
     ],
     tags: ["Lash Lift", "Lash Tint", "Brow Tints", "Party Lashes", "Keratin", "Natural Brows"],
-    primaryCta: { text: "Book Lash Services", url: "/book" },
+    primaryCta: { text: "Book Lash Services", url: SQUARE_URL.lashLift },
   },
   results: [
     {
@@ -70,28 +73,28 @@ export const LASH_SERVICES: ServicePageData = {
         title: "Keratin Lash Lift",
         description:
           "Curls and lifts your natural lashes from root to tip using a nourishing keratin formula for a wide-awake, mascara-free look lasting 6–8 weeks.",
-        cta: BOOK,
+        cta: bookService(SQUARE_URL.lashLift),
       },
       {
         tagline: "Deep Definition",
         title: "Lash Tint",
         description:
           "A rich, semi-permanent tint applied to your natural eyelashes for bold, smudge-proof definition without the daily hassle of mascara.",
-        cta: BOOK,
+        cta: bookService(SQUARE_URL.lashTint),
       },
       {
         tagline: "Shape & Definition",
         title: "Brow Tints",
         description:
           "Custom color-matched tinting designed to darken, sculpt, and fill in sparse eyebrow hairs, giving your face a polished, natural frame.",
-        cta: BOOK,
+        cta: bookService(SQUARE_URL.browTint),
       },
       {
         tagline: "Instant Glamour",
         title: "Party Lashes",
         description:
           "Customizable, lightweight cluster lash applications tailored for instant volume, drama, and length — ideal for weekends, events, and photos.",
-        cta: BOOK,
+        cta: bookService("/book"),
       },
     ],
   },

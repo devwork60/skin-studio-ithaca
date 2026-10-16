@@ -1,4 +1,4 @@
-import { SQUARE_FACIAL_BOOKING_URL } from "@/constant/site";
+import { SQUARE_URL } from "@/constant/squareServices";
 import type { ServicePageData } from "./types";
 
 export const FACIAL_TREATMENTS: ServicePageData = {
@@ -43,7 +43,7 @@ export const FACIAL_TREATMENTS: ServicePageData = {
       "Free facial consultations with all skincare services",
     ],
     tags: ["Deep Cleanse", "Hydration", "Acne Care", "Chemical Peels", "Anti-Aging", "Fusion Facials"],
-    primaryCta: { text: "Book a Facial", url: SQUARE_FACIAL_BOOKING_URL, external: true },
+    primaryCta: { text: "Book a Facial", url: SQUARE_URL.facial, external: true },
   },
   results: [
     {

@@ -1,4 +1,4 @@
-import { SQUARE_BOOKING_URL, SQUARE_FACIAL_BOOKING_URL } from "@/constant/site";
+import { SQUARE_URL } from "@/constant/squareServices";
 
 export const SERVICES_PAGE_HERO = {
   image: {
@@ -36,7 +36,7 @@ export const SERVICES_PAGE_LIST: ServiceListItem[] = [
     image: "/assets/services/facial-mask.webp",
     alt: "Professional facial treatment with gentle skincare application",
     href: "/services/facial-treatments",
-    bookUrl: SQUARE_FACIAL_BOOKING_URL,
+    bookUrl: SQUARE_URL.facial,
   },
   {
     number: "02",
@@ -47,7 +47,7 @@ export const SERVICES_PAGE_LIST: ServiceListItem[] = [
     image: "/assets/services/microfusion.webp",
     alt: "Micro-Infusion Facial before and after results",
     href: "/services/micro-infusion-facial",
-    bookUrl: SQUARE_BOOKING_URL,
+    bookUrl: SQUARE_URL.microFusion,
   },
   {
     number: "03",
@@ -58,7 +58,7 @@ export const SERVICES_PAGE_LIST: ServiceListItem[] = [
     image: "/assets/services/photofacial.webp",
     alt: "Professional BBL Photofacial treatment in progress",
     href: "/services/photo-facial",
-    bookUrl: SQUARE_BOOKING_URL,
+    bookUrl: SQUARE_URL.photoFacial,
   },
   {
     number: "04",
@@ -69,7 +69,7 @@ export const SERVICES_PAGE_LIST: ServiceListItem[] = [
     image: "/assets/services/laser-treatment.webp",
     alt: "Professional laser hair removal treatment session",
     href: "/services/laser-hair-removal",
-    bookUrl: SQUARE_BOOKING_URL,
+    bookUrl: SQUARE_URL.laserConsult,
   },
   {
     number: "05",
@@ -80,7 +80,7 @@ export const SERVICES_PAGE_LIST: ServiceListItem[] = [
     image: "/assets/services/lash.webp",
     alt: "Professional lash services including lash lift, tint, and party lashes",
     href: "/services/lash-services",
-    bookUrl: SQUARE_BOOKING_URL,
+    bookUrl: SQUARE_URL.lashLift,
   },
 ];
 
