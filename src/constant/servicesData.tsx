@@ -50,8 +50,8 @@ export const SERVICES: Service[] = [
     description:
       "A proven way to boost collagen production, tighten skin, reduce fine lines, minimize pores, and resurface skin for a radiant, youthful complexion.",
     tags: ["Collagen Boost", "Fine Lines", "Pore Refining"],
-    image: "/assets/services/microfusion.webp",
-    alt: "Gloved esthetician using a micro-infusion pen on a client's face",
+    image: "/assets/services/rejuvenation-procedur.webp",
+    alt: "Micro-infusion facial treatment on a relaxed client",
     bookUrl: SQUARE_URL.microFusion,
   },
   {

@@ -55,8 +55,8 @@ export const WHY_CHOOSE_IMAGES = [
     imageClassName: "object-cover object-top",
   },
   {
-    src: "/assets/services/microfusion.webp",
-    alt: "Gloved esthetician using a micro-infusion pen on a client's face",
+    src: "/assets/services/rejuvenation-procedur.webp",
+    alt: "Micro-infusion facial treatment on a relaxed client",
     className: "col-span-2",
     imageClassName: "object-cover",
   },

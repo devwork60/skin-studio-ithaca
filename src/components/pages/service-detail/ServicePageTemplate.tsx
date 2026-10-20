@@ -12,6 +12,7 @@ const ServicePageTemplate = ({ data }: { data: ServicePageData }) => (
     <PageHero
       wide
       image={data.hero.image}
+      imageClassName={data.hero.imageClassName}
       breadcrumb={[
         { label: "Home", href: "/" },
         { label: "Services", href: "/services" },

@@ -11,6 +11,7 @@ interface PageHeroProps {
   title: React.ReactNode;
   description: string;
   eyebrow?: string;
+  imageClassName?: string; // how the photo fills the hero; defaults to object-cover
   wide?: boolean; // 1400px content width instead of 1200px
   compact?: boolean; // shorter hero (50vh / 40vh)
   overlap?: boolean; // extra bottom space for a card that overlaps the hero
@@ -23,6 +24,7 @@ const PageHero: React.FC<PageHeroProps> = ({
   title,
   description,
   eyebrow,
+  imageClassName = "object-cover",
   wide,
   compact,
   overlap,
@@ -39,7 +41,7 @@ const PageHero: React.FC<PageHeroProps> = ({
     )}
   >
     <div className="absolute inset-0">
-      <Image src={image.src} alt={image.alt} fill priority sizes="100vw" className="object-cover" />
+      <Image src={image.src} alt={image.alt} fill priority sizes="100vw" className={imageClassName} />
       <div className="absolute inset-0 bg-gradient-to-r from-dark-primary/95 via-dark-primary/80 to-dark-primary/60" />
       <div className="absolute inset-0 bg-gradient-to-t from-dark-primary via-dark-primary/40 to-transparent" />
     </div>

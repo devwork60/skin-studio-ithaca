@@ -1,4 +1,9 @@
-export const GOOGLE_REVIEWS_URL = "https://www.google.com/maps/place/Skin+Studio+Ithaca/";
+// The studio's Google Business Profile (shared link).
+export const GOOGLE_REVIEWS_URL = "https://share.google/R0cAzt1urLeXijtq2";
+
+// Set to true once the Elfsight Google Reviews widget (see ElfsightReviews.tsx) is connected to the
+// Skin Studio Ithaca business in the Elfsight editor. While false the built-in testimonials show.
+export const GOOGLE_REVIEWS_WIDGET_READY = true;
 
 export const TESTIMONIALS_EYEBROW = "Client Stories";
 

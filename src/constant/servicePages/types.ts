@@ -23,6 +23,8 @@ export interface ServicePageData {
   seo: { title: string; description: string };
   hero: {
     image: { src: string; alt: string };
+    /** Optional object-fit/position classes for the hero photo (default: object-cover). */
+    imageClassName?: string;
     breadcrumbLabel: string;
     title: ReactNode;
     description: string;

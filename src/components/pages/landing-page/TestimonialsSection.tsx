@@ -3,14 +3,12 @@ import ButtonSm from "@/components/button/ButtonSm";
 import FadeUp from "@/components/common-components/FadeUp";
 import SectionHeader from "@/components/common-components/SectionHeader";
 import {
-  TESTIMONIALS,
   TESTIMONIALS_EYEBROW,
   TESTIMONIALS_HEADING,
   TESTIMONIALS_PRIMARY_CTA,
   TESTIMONIALS_SECONDARY_CTA,
 } from "@/constant/testimonialsData";
-import TestimonialCard from "./TestimonialCard";
-import TestimonialsRating from "./TestimonialsRating";
+import FeaturableReviews from "./FeaturableReviews";
 
 interface TestimonialsSectionProps {
   showCTAs?: boolean;
@@ -19,21 +17,16 @@ interface TestimonialsSectionProps {
 const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ showCTAs = true }) => (
   <section id="testimonials" className="bg-dark-deep py-[60px]">
     <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-      <div className="mb-16 text-center md:mb-20">
+      <div className="text-center">
         <SectionHeader
           align="center"
           eyebrow={TESTIMONIALS_EYEBROW}
           title={TESTIMONIALS_HEADING}
           headingSpacing=""
         />
-        <TestimonialsRating />
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3 md:gap-8">
-        {TESTIMONIALS.map((item, i) => (
-          <TestimonialCard key={item.name} item={item} index={i} />
-        ))}
-      </div>
+      <FeaturableReviews />
 
       {showCTAs && (
         <FadeUp

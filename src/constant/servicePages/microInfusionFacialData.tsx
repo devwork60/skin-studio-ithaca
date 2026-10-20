@@ -10,7 +10,7 @@ export const MICRO_INFUSION_FACIAL: ServicePageData = {
   },
   hero: {
     image: {
-      src: "/assets/services/microfusion.webp",
+      src: "/assets/services/rejuvenation-procedur.webp",
       alt: "Micro-Infusion Facial treatment at Skin Studio Ithaca",
     },
     breadcrumbLabel: "Micro-Infusion Facial",
@@ -24,8 +24,8 @@ export const MICRO_INFUSION_FACIAL: ServicePageData = {
   },
   detail: {
     image: {
-      src: "/assets/services/microfusion.webp",
-      alt: "Gloved esthetician using a micro-infusion pen on a client's face",
+      src: "/assets/services/rejuvenation-procedur.webp",
+      alt: "Micro-infusion facial treatment on a relaxed client",
     },
     eyebrow: "Targeted Skin Renewal",
     heading: (
