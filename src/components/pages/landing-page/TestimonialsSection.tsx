@@ -6,9 +6,12 @@ import {
   TESTIMONIALS_EYEBROW,
   TESTIMONIALS_HEADING,
   TESTIMONIALS_PRIMARY_CTA,
+  TESTIMONIALS_RATING,
+  TESTIMONIALS_REVIEW_COUNT,
   TESTIMONIALS_SECONDARY_CTA,
 } from "@/constant/testimonialsData";
-import FeaturableReviews from "./FeaturableReviews";
+import TestimonialsRating from "./TestimonialsRating";
+import TestimonialsSlider from "./TestimonialsSlider";
 
 interface TestimonialsSectionProps {
   showCTAs?: boolean;
@@ -26,7 +29,8 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ showCTAs = tr
         />
       </div>
 
-      <FeaturableReviews />
+      <TestimonialsRating rating={TESTIMONIALS_RATING} reviewCount={TESTIMONIALS_REVIEW_COUNT} />
+      <TestimonialsSlider />
 
       {showCTAs && (
         <FadeUp
